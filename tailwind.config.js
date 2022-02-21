@@ -6,12 +6,12 @@ module.exports = {
   theme: {
     extend: {
       colors: {
-        myWhite: '#EAEAEA',
-        myGrey: '#A8A8AD',
-        myBlue: '141FAA',
-        myBrown: '6E6674',
-        bgBlue: 'A4ACDD',
-        myLightBlue: '505DBD'
+        myWhite: '#fafafa',
+        myGrey: '#f1f1f1',
+        myBlue: '#141FAA',
+        myBrown: '#6E6674',
+        bgBlue: '#A4ACDD',
+        myLightBlue: '#505DBD'
       },
       fontFamily: {
         roboto: ['Roboto']
