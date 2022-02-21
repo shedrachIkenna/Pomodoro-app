@@ -1,10 +1,14 @@
-
+import Pomodoro from './components/Pomodoro'
+import Todos from './components/Todos'
 
 
 const App = () => {
   return (
-    <div className="App">
-      <h2 className="text-blue-600">Pomodoro App</h2>
+    <div className="App font-roboto">
+      <div className="">
+        <Todos />
+        <Pomodoro />
+      </div>
     </div>
   )
 }
