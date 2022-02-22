@@ -17,7 +17,7 @@ const Navbar = ({todos, showTodo}) => {
     )
 
     return (
-        <div className="bg-myWhite w-2/5 p-7">
+        <div className="grow bg-myWhite basis-5/12 p-7">
             <h3>ToDo List</h3>
             <div className="py-7 px-5">
                 <form className="mb-9 flex justify-between">

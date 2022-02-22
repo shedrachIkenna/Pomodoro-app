@@ -16,7 +16,7 @@ const App = () => {
 
   return (
     <div className="App font-roboto">
-      <div className="flex mx-auto my-0 flex-row justify-between max-w-5xl border border-myBlue">
+      <div className="h-full flex flex-wrap mx-auto my-0 flex-col lg:flex-row justify-between max-w-7xl border border-myBlue">
         <Todos todos={todos} showTodo={showTodo}/>
         <Pomodoro todos={todos} showTodo={showTodo}/>
       </div>

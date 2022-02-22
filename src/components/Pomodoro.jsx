@@ -2,13 +2,13 @@ import { CountdownCircleTimer } from 'react-countdown-circle-timer'
 
 const Pomodoro = ({todos}) => {
     return (
-        <div className="bg-myGrey w-3/5 p-7">
+        <div className="grow bg-myGrey basis-7/12 p-7">
             <div className="text-center">
                 <h2 className="text-center">Pomodoro</h2>
                 <small className="text-center">Be productive the right way!</small>
             </div>
             <div className="flex justify-between flex-row flex-wrap">
-                <div className="grow basis-3/5 border border-myBlue">
+                <div className="grow basis-6/12 border border-myBlue p-7 flex justify-center">
                     <CountdownCircleTimer
                         isPlaying
                         duration={7}
@@ -18,7 +18,7 @@ const Pomodoro = ({todos}) => {
                         {({ remainingTime }) => remainingTime}
                     </CountdownCircleTimer>
                 </div> 
-                <div className="grow basis-2/5 border border-myBlue">
+                <div className="grow basis-6/12 border border-myBlue p-7">
                     <div>
                         <h3>Set Timer</h3>
                         <div>
