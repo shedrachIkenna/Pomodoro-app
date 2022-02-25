@@ -11,7 +11,8 @@ module.exports = {
         myBlue: '#141FAA',
         myBrown: '#6E6674',
         bgBlue: '#A4ACDD',
-        myLightBlue: '#505DBD'
+        myLightBlue: '#505DBD',
+        myDarkGrey: '#e8e8e8'
       },
       fontFamily: {
         roboto: ['Roboto']

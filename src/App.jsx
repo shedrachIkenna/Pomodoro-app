@@ -10,15 +10,18 @@ const App = () => {
     { id: 3, content: "Become a profitable forex trader" }
   ]);
 
-  const showTodo = (id) => {
-      console.log(id)
+  const [pomodoroTodo, setPomodoroTodo] = useState('')
+
+  const showTodo = (content) => {
+      console.log(content)
+      setPomodoroTodo(content)
   }
 
   return (
     <div className="App font-roboto">
       <div className="h-full flex flex-wrap mx-auto my-0 flex-col lg:flex-row justify-between max-w-7xl border border-myBlue">
         <Todos todos={todos} showTodo={showTodo}/>
-        <Pomodoro todos={todos} showTodo={showTodo}/>
+        <Pomodoro pomodoroTodo={pomodoroTodo}/>
       </div>
     </div>
   )

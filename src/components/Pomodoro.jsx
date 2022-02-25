@@ -1,6 +1,8 @@
 import { CountdownCircleTimer } from 'react-countdown-circle-timer'
+import ReactSlider from 'react-slider'
 
-const Pomodoro = ({todos}) => {
+const Pomodoro = ({pomodoroTodo}) => {
+    
     return (
         <div className="grow bg-myGrey basis-7/12 p-7">
             <div className="text-center">
@@ -18,12 +20,21 @@ const Pomodoro = ({todos}) => {
                         {({ remainingTime }) => remainingTime}
                     </CountdownCircleTimer>
                 </div> 
+                <p>{pomodoroTodo}</p>
                 <div className="grow basis-6/12 border border-myBlue p-7">
                     <div>
                         <h3>Set Timer</h3>
                         <div>
-                            <input type="text"/>
-                            <input type="text"/>
+                            <label htmlFor="">Todo task time: </label>
+                            <ReactSlider 
+                                className={"h-8 border-2 border-myDarkGrey"}
+                                thumbClassName={"thumb"}
+                                trackClassName={"track"}
+                                value={45}
+                                min={2}
+                                max={120}
+                                renderThumb={(props, state) => <div {...props}>{state.valueNow}</div>}
+                            />
                         </div>
                     </div>
                     <div>
