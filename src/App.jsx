@@ -1,6 +1,7 @@
 import { useState } from 'react'
 import Pomodoro from './components/Pomodoro'
 import Todos from './components/Todos'
+import AddTodo from './components/AddTodo'
 
 
 const App = () => {
@@ -17,11 +18,23 @@ const App = () => {
       setPomodoroTodo(content)
   }
 
+  const addTodo = (todo) => {
+    todo.id = Math.random();
+    // let todos = [...this.state.todos, todo];
+    console.log(todo)
+    setTodos([
+      ...todos,todo
+    ])
+  }
+
   return (
     <div className="App font-roboto">
       <div className="h-full flex flex-wrap mx-auto my-0 flex-col lg:flex-row justify-between max-w-7xl border border-myBlue">
-        <Todos todos={todos} showTodo={showTodo}/>
         <Pomodoro pomodoroTodo={pomodoroTodo}/>
+        <div className="grow bg-myWhite basis-5/12 p-7">
+          <AddTodo addTodo={addTodo}/>
+          <Todos todos={todos} showTodo={showTodo}/>
+        </div>
       </div>
     </div>
   )
