@@ -19,7 +19,7 @@ const Navbar = ({todos, showTodo}) => {
     return (
         <div className="grow bg-myWhite basis-5/12 p-7">
             <h3>ToDo List</h3>
-            <div className="py-7 px-5">
+            <div className="py-7 px-2">
                 <form className="mb-9 flex justify-between">
                     <input className="p-2 w-3/4" type="text" placeholder="Add new todo"/>
                     <button className="text-center">Add Todo</button>
